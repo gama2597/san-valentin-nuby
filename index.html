@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz San Valentin Cariño</title>
+    <title>Para mi San Valentín ❤️</title>
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+    
+    <div class="hearts-container" id="heartsContainer"></div>
+
     <div class="container">
         
         <div id="gifContainer">
@@ -29,22 +34,19 @@
 
         <div id="slideshowContainer" class="hidden">
             <img id="slideImg" src="" alt="Nuestros recuerdos" class="slide-image">
-            
             <div id="slideText" class="slide-text"></div>
-
             <div class="dots-container" id="dotsContainer"></div>
         </div>
         
-        <h1 id="question">Mi cariñoo bonitoooooooooo 🥹​, ¿Quieres ser mi San Valentín? 💞</h1>
+        <h1 id="question">Mi cariñoo bonitoooooooooo 🥹,<br>¿Quieres ser mi San Valentín? 💞</h1>
         
         <div class="btn-group">
-            <button id="siBtn">Sí</button>
+            <button id="siBtn" class="pulse-animation">Sí</button>
             <button id="noBtn">No</button>
         </div>
 
         <audio id="bgMusic" loop hidden>
             <source src="music/musica.mp3" type="audio/mpeg">
-            Tu navegador no soporta el audio.
         </audio>
         
     </div>
